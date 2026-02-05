@@ -1,5 +1,11 @@
 # John Hodges
 
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI--CD-A62639?style=flat)
+
 Aspiring Junior Software Engineer | Mechanical Engineer | Automation & Data Pipelines  
 
 ---
@@ -17,15 +23,25 @@ I enjoy solving complex problems, debugging systems end-to-end, and building too
 ### Energy Data Aggregation Pipeline
 [GitHub Repo](https://github.com/h0dg/eia-pipeline)  
 
+**Overview**
 Built an incremental ETL pipeline in Python to ingest, clean, and aggregate U.S. electricity generation data from the EIA Open Data API.  
+
+**Pipeline Workflow**
+```text
+EIA API -> Raw SQLite DB -> Clean SQLite DB -> Aggregation Scripts -> CLI Reports/Visualizations
+```
 
 **Key Features:**
 - Modular Python scripts with unit tests (pytest), logging, and error handling
 - Raw & clean SQLite databases with mapping tables for states, fuels, and units
 - CLI interface for end-to-end execution
 - Produces clean, analysis-ready datasets and visualizations
+- Demonstrates software engineering practices, reproducible workflows, and system-level thinking.
 
-This project demonstrates software engineering practices, reproducible workflows, and system-level thinking.
+**Example CLI Usage:**
+```bash
+python -m src.main.py --transform
+```
 
 ---
 
